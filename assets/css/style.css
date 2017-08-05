@@ -1,0 +1,157 @@
+
+body {
+    font: 200% "Comic Sans MS",
+    /*cursive; background: fuchsia;*/
+    /*color: yellow;*/
+    cursive; background-image: url("../images/abs.jpg")
+    /*cursive; background: green;*/
+}
+
+.container {
+    text-align: center;
+}
+
+.row {
+/*    float: left;*/
+}
+
+.btn {
+
+}
+
+#game-name {
+    text-align: center;
+    color: green;
+    font-weight: bold;
+
+}
+
+#game-description {
+    color: blue;
+    font-weight: bold;
+}
+
+#game-statement {
+    font-weight: bold;
+}
+
+#col-lg-4 {
+
+}
+
+#col-L-header {
+
+}
+
+#hanging-man {
+
+}
+
+#col-M-header {
+
+}
+
+#word-guessed {
+
+}
+
+#win-statement {
+
+}
+
+#game-image {
+
+}
+
+#game-audio {
+
+}
+
+#col-R-header {
+
+}
+
+#wins {
+
+}
+
+#word {
+    
+}
+
+#guesses {
+
+}
+
+#wrong-guesses {
+
+}
+
+/* Hangman Graphic styling*/
+
+#hangman-graphic {
+  /*max-width: 100%;*/
+}
+#hangman-graphic img {
+  margin-left: 1em;
+  max-width: 100%;
+}
+.hangman-frames {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  transition: opacity 0.2s;
+}
+#hangman-frame0 {
+  opacity: 1;
+}
+.hangman-controls {
+  margin-top: 3em;
+  text-align: center;
+}
+
+
+/** {
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+}
+/* Keep it simple - improvement would be to not display characters */
+ /*.letter {
+    display: inline-block;
+    list-style: none;
+    width: 20px;
+    margin: 0 5px;
+    border-bottom: 1px solid black;
+    text-align: center;
+    color: white;
+}
+.current-word {
+    list-style: none;
+}
+p {*/
+    /*float: left;*/
+/*}
+.output {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+.correct {
+    background-color: green;
+    transition: all 1s ease;
+}
+.error {
+    color: red;
+    opacity: 1;
+}
+.warning {
+    color: orange;
+    opacity: 1;
+}
+.win {
+    color: green;
+    opacity: 1;
+}*/

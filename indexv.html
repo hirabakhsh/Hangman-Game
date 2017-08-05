@@ -1,0 +1,109 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <script src="assets/javascript/hangModal.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<title>Hangman Game</title>
+</head>
+
+<body>
+	<div class="container">
+		  <div class='row'>
+		    <div class='col-sm-8 hanghead'>
+		      <button type="button" class="btn btn-default pull-right" data-toggle="modal" data-target="#info">Game Directions!</button>
+		    </div>
+		  </div>
+
+		  <div id='info' class="modal fade">
+		    <div class="modal-dialog">
+		      <div class="modal-content">
+		        <div class="modal-header">
+		          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		          <h3 class="modal-title">Welcome to Hangman!</h3>
+		        </div>
+		        <div class="modal-body">
+		          <h4>Here's the scoop: The objective is to guess what word fills the blank spaces below the gallows [heh, heh].</h4>
+		          <ol>
+		              <li>Type a letter between A and Z.</li>
+		              <li>If the letter is contained in the word, it will display in the word box below the gallows OR if not part of the hangman will display, and the letter you chose will go to the graveyard.</li>
+		              <li>Rinse and repeat until either you guessed the whole word or the man is hung [heh, heh].</li>
+		          </ol>
+		        </div>
+		      </div><!-- /.modal-content -->
+		    </div><!-- /.modal-dialog -->
+		  </div><!-- /.modal -->
+
+		<div class="row">
+			<h1 id="game-name">
+			<img src="assets/images/hangmanword.jpg" height='200px'>
+			</h1>
+			<h2 id="game-description">Languages of The World</h2>
+			<h3 id="game-statement">Let's see if you can guess the language!</h3>	
+		</div>
+		
+		<div class="row"> 
+			<div class="col-lg-4"> <!-- left column. Includes hanging man -->
+				<p id="col-L-header">Hanging Man Status</p>
+				<div id="hangman-graphic" class="col-sm-3">
+			          <img src="assets/images/background.png" height='200px'>
+			          <img class="hangman-frames" id="hangman-frame0"
+			               src="assets/images/hangman0.jpg" height='200px'>
+			          <img class="hangman-frames" id="hangman-frame1"
+			               src="assets/images/hangman1.jpg" height='200px'>
+			          <img class="hangman-frames" id="hangman-frame2"
+			               src="assets/images/hangman2.jpg" height='200px'>
+			          <img class="hangman-frames" id="hangman-frame3"
+			               src="assets/images/hangman3.jpg" height='200px'>
+			          <img class="hangman-frames" id="hangman-frame4"
+			               src="assets/images/hangman4.jpg" height='200px'>
+			          <img class="hangman-frames" id="hangman-frame5"
+			               src="assets/images/hangman5.jpg" height='200px'>
+			          <img class="hangman-frames" id="hangman-frame6"
+			               src="assets/images/hangman6.jpg" height='200px'>
+			          <img class="hangman-frames" id="hangman-frame7"
+			               src="assets/images/hangman7.jpg" height='200px'>
+			        </div>
+
+			</div>
+			<div class="col-lg-4"> 
+
+				<!-- also add win/lose statement here -->
+				<div id="win-statement"></div>
+
+				<!-- add code for changing image and music -->
+				<div id="game-image"></div>
+				<div id="game-audio"></div>
+
+			</div>
+
+
+			<div class="col-lg-4"> <!-- right column. Includes game data -->	
+				<p id="col-R-header">Press any Key to get started!</p>
+
+				<p>Number of Wins</p>
+				<!-- number of gmaes won so far -->
+				<p id="wins">number of wins</p>
+				
+				<p>Guess the Word</p>
+				<!-- Word picked. generated randomly and shows dashes only-->
+				<div id="word"></div>
+				
+				<p>Remaining guesses</p>
+				<!-- number of remaining guesses -->
+				<div id="guesses"></div>
+
+				<p>Letters already guessed</p>
+				<!--letters already guessed but were wrong -->
+				<div id="wrong-guesses"></div>
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>
